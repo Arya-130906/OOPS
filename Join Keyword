@@ -1,0 +1,31 @@
+import java.lang.*;
+class A extends Thread {
+    public void run(){
+        int i;
+        for(i=2;i<=10;i+=2){
+            System.out.println("Even: "+i);
+        }
+    }
+}
+class B extends Thread{
+    public void run(){
+        int i;
+        for(i=1;i<=10;i+=2){
+            System.out.println("Odd: "+i);
+        }
+    }
+}
+public class Main{
+    public static void main(String []args){
+        A aa=new A();
+        B bb=new B();
+        aa.start();
+        try{
+            aa.join();
+        }
+        catch(Exception e){
+            System.out.println("Error");
+        }
+        bb.start();
+    }
+}
