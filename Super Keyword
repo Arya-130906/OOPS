@@ -1,0 +1,28 @@
+class A{
+    public void div(){
+        int a=20;
+        int b=10;
+        int c=a/b;
+        System.out.println(c+" ");
+    }
+    
+}
+    class C extends A{
+        public void div(){
+            int e=12;
+            int f=2;
+            int g=e/f;
+            System.out.println(g+" ");
+        }
+        public void printmsg(){
+            div();
+            super.div();
+        }
+    }
+    public class K{
+    public static void main(String []args){
+       C h= new C();
+       h.printmsg();
+    }
+        
+    }
