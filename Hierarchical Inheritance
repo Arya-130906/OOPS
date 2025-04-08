@@ -1,0 +1,41 @@
+class A{
+    public void div(){
+        int a=20;
+        int b=10;
+        int c=a/b;
+        System.out.println(c+" ");
+    }
+    
+}
+    class C extends A{
+        public void mul(){
+            int e=12;
+            int f=2;
+            int g=e*f;
+            System.out.println(g+" ");
+        }
+    }
+    class E extends A{
+        public void i(){
+            System.out.println("Multilevel Inheritance");
+        }
+    }
+    class F extends A{
+        public void j(){
+            System.out.println("Hierarchical Inheritance");
+        }
+    }
+    public class K{
+    public static void main(String []args){
+       C h= new C();
+       E s=new E();
+       F w=new F();
+       h.div();
+       h.mul();
+       s.i();
+       s.div();
+       w.j();
+       w.div();
+    }
+        
+    }
