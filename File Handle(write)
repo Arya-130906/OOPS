@@ -1,0 +1,14 @@
+import java.io.*;
+public class AA{
+    public static void main(String[] args){
+        try{
+            FileWriter w=new FileWriter("C:\\Users\\HP\\Desktop\\file1.txt\\");
+            w.write("File Handling in java");
+            w.close();
+            System.out.println("Writen");;
+        }catch(Exception e){
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+    }
+}
