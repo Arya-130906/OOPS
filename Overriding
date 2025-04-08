@@ -1,0 +1,17 @@
+class A {
+	public void B() {
+		System.out.println("Hello");
+	}
+}
+class C extends A {
+	public void B() {
+		System.out.println("Hiiiii");
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		C c1 = new C();
+		c1.B();
+		c1.B();
+	}
+}
