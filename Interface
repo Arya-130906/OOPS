@@ -1,0 +1,36 @@
+interface ICalculator{
+    int add(int a,int b);
+    int sub(int a,int b);
+    int mul(int a,int b);
+    int div(int a,int b);
+    int large(int a,int b);
+}
+class Calculator implements ICalculator{
+    public int add(int a,int b){
+        int c=a+b;
+        return c;
+    }
+    public int sub(int a,int b){
+        int c=a-b;
+        return c;
+    }
+    public int mul(int a,int b){
+        int c=a*b;
+        return c;
+    }
+    public int div(int a,int b){
+        int c=a/b;
+        return c;
+    }
+    public int large(int a,int b){
+        return Math.max(a,b);
+    }
+    public static void main(String []args){
+        Calculator cal=new Calculator();
+        System.out.println(cal.add(10,3));
+        System.out.println(cal.sub(5,8));
+        System.out.println(cal.mul(50,10));
+        System.out.println(cal.div(10,5));
+        System.out.println(cal.large(1,3));
+    }
+}
