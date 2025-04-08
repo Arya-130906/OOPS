@@ -1,0 +1,16 @@
+import java.io.*;
+public class AA{
+    public static void main(String[] args){
+        try{
+            FileReader r=new FileReader("C:\\Users\\HP\\Desktop\\file1.txt\\");
+            int character;
+            while((character=r.read())!=-1){
+            System.out.print(character);
+            }
+        r.close();
+        }catch(Exception e){
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+    }
+}
