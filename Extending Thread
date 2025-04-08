@@ -1,0 +1,21 @@
+class AA extends Thread
+ {
+   public void hi()
+   {
+     try
+     {
+       System.out.println ("Thread is working.");
+     }
+     catch (Exception e)
+     {
+       System.out.println ("Exception"); 2Has conversations. Original line has conversations.
+     }
+   }
+ }
+ public class A{
+   public static void main(String[] args)
+   {
+       AA n = new AA();
+       n.hi();
+     }
+ 
